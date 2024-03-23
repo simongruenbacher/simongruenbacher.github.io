@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+    <header>
+    <title> Simon Gr&uumlnbachers Personal Homepage</title>
+<style>
+body {
+    font-family: Monaco, sans-serif;
+    margin:0;
+    font-size:15px;
+    padding:0;
+    box-sizing:border-box;
+    background-color:lightcyan;
+}
+nav {
+    position: fixed;
+}
+nav a {
+            float: left;
+            display: block;
+            color: black;
+            background-color:lightgreen;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+a {
+    text-decoration:none;
+}
+
+nav a:hover {
+    background-color:palegreen;
+}
+
+h2 {
+    font-size:25px;
+}
+
+section {
+    display: none;
+    padding: 20px;
+}
+
+section:target {
+    display: block;
+}
+
+</style>
+    </header>
+    <body onload='location.href = "#home"'>
+        <nav>
+            <a href="#home"> HOME </a>
+            <a href="#publications"> PUBLICATIONS </a>
+            <a href="#talks"> TALKS </a>
+            <a href="#links"> LINKS </a>
+        </nav>
+        <br>
+        <section id="home">
+            <h2> Home </h2>
+            <!--<img src="me.jpg" id="me">--!>
+            <p>My name is Simon Gr&uumlnbacher. I study computer science at Johannes Kepler University Linz, Austria.
+            I am currently employed at the Institute for Systems Software at JKU, working on the development of <a href="https://marketplace.visualstudio.com/items?itemName=SSW-JKU.javawiz">JavaWiz</a>.
+            It's a visual Java Debugger primarily intended for first-semester computer science students.
+            The Frontend is written in VueJS and TypeScript, the Backend in Kotlin.
+            </p>
+            <p>
+            I am also working at the Institute for Integrated Circuits at JKU. There, I am working on combinatorial optimization under the supervision of Richard Kueng.
+            </p>
+            <p>
+            I was also employed in the FWF Project <em>Equations in Universal Algebra</em> under the supervision of Erhard Aichinger at the Institute of Algebra at JKU.
+            The aim of the project was to investigate the computational complexity of solving equations over finite structures such as groups and rings.
+        </section>
+        <section id="publications">
+            <h2> Publications</h2>
+            <ul>
+                <li>
+                    <p>
+                    Erhard Aichinger, Simon Gr&uumlnbacher and Paul Hametner, <em>Zero testing and equation solving for sparse polynomials on rectangular domains</em>, Finite Fields and their applications 95, 2024, <a href="https://doi.org/10.1016/j.ffa.2024.102379"> doi </a>
+                    </p>
+                </li>
+                <li>
+                    <p> 
+                    Erhard Aichinger and Simon Gr&uumlnbacher,<em>
+                        The Complexity of Checking Quasi-Identities over Finite Algebras with a Mal'cev Term</em>, 40th International Symposium on Theoretical Aspects of Computer Science (STACS 2023). Schloss Dagstuhl-Leibniz-Zentrum f&uumlr Informatik, 2023, <a href="https://doi.org/10.4230/LIPIcs.STACS.2023.4"> doi </a>
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section id="talks">
+            <h2> Talks </h2>
+            <ul>
+                <li>15.06.2023:<em>
+                        Identity testing for sparse polynomials on rectangular domains,
+                        </em>Seminar algebra and discrete mathematics, JKU Linz, <a href="pdf/slides_abspol.pdf">slides</a>
+                </li>
+                <li>07.03.2023:<em>
+                        The Complexity of checking Quasi-identities over finite Algebras with a Mal'cev term,</em>
+                    STACS 2023, Hamburg, <a href="pdf/slides_stacs.pdf">slides</a>
+                </li>
+
+                <li> 13.10.2022:<em> Hardness of checking quasi-identities,</em>
+
+                    Seminar algebra and discrete mathematics, JKU Linz
+                    <li> 07.04.2022:<em>
+                            Verification of Quasi-Identities over Finite Algebras,</em>
+                        Seminar algebra and discrete mathematics, JKU Linz
+                    </li>
+            </ul>
+        </section>
+        <!-- TODO: add blog entry for matrix multiplication / sat solving--!>
+        <section id="links">
+        <h2> Links </h2>
+        <ul>
+        <li> <a href = "https://ssw.jku.at/General/Staff/GruenbacherSimon/"> My page</a> at the Institute for Systems Software </li>
+        <li> <a href = "https://iic.jku.at/team/"> Institute for Integrated Circuits </a>
+        </ul>
+    </body>
+</html>
